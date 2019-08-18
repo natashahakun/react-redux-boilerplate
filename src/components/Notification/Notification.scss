@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+@import '../../styles/animations';
+
+.Notification {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    background-color: $blue;
+    color: $white;
+    animation-name: slideDown;
+    animation-duration: $duration-average;
+    animation-fill-mode: forwards;
+    animation-timing-function: $ease-out-quad;
+
+    &--error {
+        background-color: $red;
+    }
+
+    &--warning {
+        background-color: $orange;
+    }
+}

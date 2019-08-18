@@ -1,0 +1,53 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.Checkbox {
+    display: inline-block;
+    
+    &__input {
+        position: absolute;
+    
+        @include accessible-text;
+        @include padding(0);
+    
+        &:focus + .Checkbox__styled-checkbox {
+            outline: $blue-outline auto 5px;
+        }
+    }
+    
+    &__styled-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $green;
+        border-radius: $border-radius;
+        background-color: $white;
+        margin-right: 8px;
+        transition: all 150ms;
+        cursor: pointer;
+    
+        &.checked {
+            background-color: $green;
+    
+            &:after {
+                content: "\2713";
+                color: $white;
+
+                @include center-absolute;
+            }
+        }
+    
+        &.disabled {
+            border-color: $gray-100;
+            pointer-events: none;
+        }
+    
+        &.checked.disabled {
+            background-color: $gray-100; 
+        }
+    }
+}
+

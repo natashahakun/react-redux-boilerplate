@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Card {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $gray-100;
+    border-radius: $border-radius;
+
+    @include padding(10px);
+}

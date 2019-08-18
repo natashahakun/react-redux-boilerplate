@@ -1,0 +1,29 @@
+@import '../../styles/animations.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.LoadingIndicator {
+    z-index: $overlay-z-index;
+    @include fixed-full-screen;
+
+    &__spinner-container {
+        height: 100%;
+    }
+
+    &__spinner {
+        height: 120px;
+        width: 120px;
+        border-top: 3px solid $blue;
+        border-right: 3px solid $blue;
+        border-bottom: 3px solid $blue;
+        border-radius: 50%;
+        animation-name: loadingRing;
+        animation-duration: $duration-loading-indicator;
+        animation-timing-function: $ease-in-out-circ;
+        animation-iteration-count: infinite;
+    }
+
+    &--accessible-text {
+        @include accessible-text;
+    }
+}

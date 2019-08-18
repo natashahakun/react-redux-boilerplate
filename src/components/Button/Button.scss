@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.Button {
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $blue;
+    }
+}
