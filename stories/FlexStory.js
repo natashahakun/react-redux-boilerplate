@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Button, Flex } from '../components';
+import { Button, Flex } from '../src/components';
 
 export default storiesOf('Flex', module)
     .add('default', () => (

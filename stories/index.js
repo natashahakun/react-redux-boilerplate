@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 
-import '../styles/global.scss';
+import '../src/styles/global.scss';
 
-import AddItemsStory from './AddItemsStory';
 import ButtonStory from './ButtonStory';
 import CardStory from './CardStory';
 import CheckboxStory from './CheckboxStory';
@@ -17,7 +16,6 @@ import TextareaStory from './TextareaStory';
 
 const StoryBook = () => (
     <Fragment>
-        <AddItemsStory />
         <ButtonStory />
         <CardStory />
         <CheckboxStory />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { LoadingIndicator } from '../components';
+import { LoadingIndicator } from '../src/components';
 
 export default storiesOf('LoadingIndicator', module)
     .add('default', () => (

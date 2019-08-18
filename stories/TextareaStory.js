@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Textarea } from '../components';
+import { Textarea } from '../src/components';
 
 export default storiesOf('Textarea', module)
     .add('default', () => <Textarea form="testFormId" id="defaultTextarea" label="Default" onChange={() => {}} />)

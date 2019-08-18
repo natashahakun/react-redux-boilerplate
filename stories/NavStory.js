@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Nav } from '../components';
+import { Nav } from '../src/components';
 
 const items = [
     {

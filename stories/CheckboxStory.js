@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Checkbox } from '../components';
+import { Checkbox } from '../src/components';
 
 export default storiesOf('Checkbox', module)
     .add('default', () => <Checkbox id="checkboxStoryDefault" label="Default" onChange={() => {}} />)

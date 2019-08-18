@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Notification } from '../components';
+import { Notification } from '../src/components';
 
 export default storiesOf('Notification', module)
     .add('default success', () => (
