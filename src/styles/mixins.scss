@@ -1,0 +1,39 @@
+@mixin accessible-text {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin center-absolute($transform: translate(-50%, -50%)) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: $transform;
+}
+
+@mixin fixed-full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin margin($value) {
+    margin-top: $value;
+    margin-right: $value;
+    margin-bottom: $value;
+    margin-left: $value;
+}
+
+@mixin padding($value) {
+    padding-top: $value;
+    padding-right: $value;
+    padding-bottom: $value;
+    padding-left: $value;
+}

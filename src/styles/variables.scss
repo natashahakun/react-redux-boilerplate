@@ -1,0 +1,35 @@
+// Colors
+
+$white: #FFFFFF;
+$black: #000000;
+
+$blue-outline: rgb(59, 153, 252);
+
+// Common
+
+// Z-Index
+
+// Animation
+
+$duration-quick: 0.15s;
+$duration-average: 0.3s;
+$duration-long: 0.6s;
+$duration-loading-indicator: 1.2s;
+
+// Easings
+
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+$ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$ease-in-quad: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+
+// Media Queries
+
+$width-min-mobile: 375;
+$width-min-tablet: 768;
+$width-min-desktop: 1024;
+$width-min-lg-desktop: 1440;
+
+$mq-min-mobile: '(min-width: #{$width-min-mobile}px)';
+$mq-min-tablet: '(min-width: #{$width-min-tablet}px)';
+$mq-min-desktop: '(min-width: #{$width-min-desktop}px)';
+$mq-min-lg-desktop: '(min-width: #{$width-min-lg-desktop}px)';
