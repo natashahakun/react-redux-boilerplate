@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
 
 function App() {
   return (
     <div>
-        App
+        <FormattedMessage id="application.title" />
     </div>
   );
 }
