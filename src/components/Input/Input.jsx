@@ -28,6 +28,6 @@ Input.propTypes = {
     label: PropTypes.string.isRequired,
     name: PropTypes.oneOfType([PropTypes.string, PropTypes.array]), // array for Formik
     onChange: PropTypes.func.isRequired,
-    value: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     type: PropTypes.string
 };

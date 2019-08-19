@@ -28,19 +28,19 @@ const RadioGroup = ({
 );
 
 RadioGroup.defaultProps = {
-    checked: false
+    checked: ''
 };
 
 RadioGroup.propTypes = {
     ariaLabelledby: PropTypes.string.isRequired, // id of labelling element
-    checked: PropTypes.bool,
+    checked: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     onChange: PropTypes.func.isRequired,
     options: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
             name: PropTypes.string,
-            value: PropTypes.string.isRequired
+            value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
         })
     ).isRequired
 };
